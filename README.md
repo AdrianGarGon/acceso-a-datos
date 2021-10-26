@@ -1,5 +1,5 @@
 # DAM: Acceso a Datos (AAD)
-Repositorio público donde realizaremos todos los ejercicios del módulo
+Repositorio del módulo Acceso a datos del ciclo formativo Desarrollo de Aplicaciones Multimedia del Curso 2021-22 en el IES Alonso de Madrigal.
 
 # Contenido del repositorio
 
