@@ -7,7 +7,7 @@ Repositorio público donde realizaremos todos los ejercicios del módulo
 - En esta unidad trabajaremos con ficheros en kotlin y en un entorno móvil (Android).
 - Objetivos y Criterios de evaluación [aquí](https://github.com/DAM-2021/acceso-a-datos/blob/master/assets/ut01/UT-01_%20Objetivos%20y%20Criterios.pdf)
 
-## UT-02: Almacenamiento XML: SharedPreferences
+## UT-02: Almacenamiento XML
 - En esta unidad trabajaremos con la gestión de ficheros clave-valor usando SharedPreferences.
 - En esta unidad trabajaremos con la gestión de ficheros clave-valor usando DataStore.
 - En esta unidad se ven conceptos de abstracción de fuentes de datos.
