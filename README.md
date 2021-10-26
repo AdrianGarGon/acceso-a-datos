@@ -1,4 +1,4 @@
-# Acceso a Datos (Desarrollo de Aplicaciones Multimedia)
+# DAM: Acceso a Datos (AAD)
 Repositorio público donde realizaremos todos los ejercicios del módulo
 
 # Contenido del repositorio
