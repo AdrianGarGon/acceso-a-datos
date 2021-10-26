@@ -1,13 +1,8 @@
 ## Description
-<!-- Describe your changes in detail -->
+<!-- Descripción sobre lo hecho en la PR -->
 
-## Related Issue
-<!-- Please link to the issue here: -->
+## Keywords
+<!-- Palabras relacionadas con los conceptos vistos -->
 
-## How has this been tested?
-<!-- Please, describe in detail how you tested your changes -->
-
-## Design UI
-<!-- Please add the design to develop -->
-
-## Screenshots or Video
+## Screenshots
+<!-- Captura de pantalla de la consola -->
