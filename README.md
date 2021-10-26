@@ -17,6 +17,13 @@ Repositorio del módulo **Acceso a Datos** del ciclo formativo **Desarrollo de A
 - En esta unidad se trabaja con bases de datos relacionales y de objetos.
 - En esta unidad se trabaja con un ORM: Room Android.
 
+## UT-04: Firebase
+- En esta unidad se trabaja con una base de datos documental (NoSQL): Firebase.
+- Conexión con Firebase desde una aplicación Android.
+
+## UT-05: Integración en una aplicación
+- En esta unidad se trabaja cómo integrar la capa de datos en una aplicación (Android).
+
 ## General / Repaso
 - Repaso de conceptos sobre Versión de Control.
 - Repaso de conceptos sobre clase, interfaces y clases abstractas.
