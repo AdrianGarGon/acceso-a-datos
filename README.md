@@ -9,7 +9,6 @@ Repositorio del módulo **Acceso a Datos** del ciclo formativo **Desarrollo de A
 
 ## UT-02: Almacenamiento XML
 - En esta unidad trabajaremos con la gestión de ficheros clave-valor usando SharedPreferences.
-- En esta unidad trabajaremos con la gestión de ficheros clave-valor usando DataStore.
 - En esta unidad se ven conceptos de abstracción de fuentes de datos.
 - En esta unidad se trabaja con la Capa de Datos.
 - Objetivos y Criterios de evaluación [aquí](https://github.com/DAM-2021/acceso-a-datos/blob/master/assets/ut02/UT-02_%20Objetivos%20y%20Criterios.pdf)
