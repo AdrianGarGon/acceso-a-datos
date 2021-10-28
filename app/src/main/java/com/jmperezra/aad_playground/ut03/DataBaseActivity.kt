@@ -23,8 +23,11 @@ class DataBaseActivity : AppCompatActivity() {
         ).build()
 
         Thread(Runnable {
-            db.userDao().insertAll(UserEntity(1, "Alumno1", "alumno1", "alumno@email.es"))
-            val user = db.userDao().findById(1)
+            var user = db.userDao().findById(1)
+            if (user == null) {
+                db.userDao().insertAll(UserEntity(1, "Alumno1", "alumno1", "alumno@email.es"))
+                user = db.userDao().findById(1)
+            }
             Log.d("@dev", "$user")
         }).start()
     }

@@ -20,7 +20,7 @@ interface UserDao {
     fun findByName(first: String, last: String): UserEntity
 
     @Query("SELECT * from user WHERE id = :id")
-    fun findById(id: Int): UserEntity
+    fun findById(id: Int): UserEntity?
 
     @Insert
     fun insertAll(vararg user: UserEntity)
