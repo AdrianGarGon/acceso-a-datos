@@ -4,5 +4,5 @@
 ## Keywords
 <!-- Palabras relacionadas con los conceptos vistos -->
 
-## Screenshots
+## Screenshots or Video
 <!-- Captura de pantalla de la consola -->
