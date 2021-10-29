@@ -9,16 +9,16 @@ import com.jmperezra.aad_playground.commons.Serializer
  * Esta clase junto con la estructura de DataSource es lo que se conoce como Factory Pattern.
  * Es un patrón de diseño para resolver un problema común.
  */
-class DataSourceFactory<T : LocalModel>(
+class LocalStorageFactory<T : LocalModel>(
     private val activity: AppCompatActivity,
     private val serializer: Serializer<T>
 ) {
 
-    fun create(idActionClicked: Int): DataSource<T> {
+    fun create(idActionClicked: Int): LocalStorage<T> {
         return when (idActionClicked) {
-            R.id.action_repository_file -> FileDataSource(activity, serializer)
-            R.id.SharedPref_Button_Action -> SharPrefDataSource(activity, serializer)
-            else -> MemDataSource()
+            R.id.action_repository_file -> FileLocalStorage(activity, serializer)
+            R.id.action_repository_shapref -> SharPrefLocalStorage(activity, serializer)
+            else -> MemLocalStorage()
         }
     }
 }

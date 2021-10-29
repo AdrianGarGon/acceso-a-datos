@@ -7,17 +7,17 @@ package com.jmperezra.aad_playground.ut02.exercise02
  * Pista II: Como estamos hablando de TapaRepository, es el momento de concretar el modelo de datos
  *           con el que queremos trabajar: TapaLocalModel.
  */
-class TapaRepository(private val dataSource: DataSource<TapaLocalModel>) {
+class TapaRepository(private val localStorage: LocalStorage<TapaLocalModel>) {
 
     /**
      * Guardo un modelo de datos de tipo Tapa
      */
     fun save(tapa: TapaLocalModel) {
-        dataSource.save(tapa)
+        localStorage.save(tapa)
     }
 
     /**
      * Recupero un modelo de datos de tipo Tapa
      */
-    fun fetch(id: Int): TapaLocalModel? = dataSource.fetch(id.toString())
+    fun fetch(id: Int): TapaLocalModel? = localStorage.fetch(id.toString())
 }
