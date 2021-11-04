@@ -17,7 +17,7 @@
             android:exported="true" />
 
         <activity
-            android:name=".ut02.exercise02.Exercise02Activity"
+            android:name=".ut02.ex02.Exercise02Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

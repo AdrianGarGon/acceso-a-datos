@@ -1,4 +1,4 @@
-package com.jmperezra.aad_playground.ut02.exercise02
+package com.jmperezra.aad_playground.ut02.ex02
 
 import androidx.appcompat.app.AppCompatActivity
 import com.jmperezra.aad_playground.R

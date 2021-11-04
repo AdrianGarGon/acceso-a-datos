@@ -1,4 +1,4 @@
-package com.jmperezra.aad_playground.ut02.exercise02
+package com.jmperezra.aad_playground.ut02.ex02
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
@@ -12,7 +12,7 @@ import java.io.File
  * Pista: NO se debe meter un modelo en concreto, trabajamos con abstracciones: LocalModel y
  *        genéricos: T.
  */
-interface DataSource<T : LocalModel> {
+interface LocalStorage<T : LocalModel> {
     fun save(model: T)
     fun fetch(id: String): T?
 }
@@ -21,10 +21,10 @@ interface DataSource<T : LocalModel> {
  * Clase que me permite guardar y recuperar modelos de datos en ficheros.
  *
  */
-class FileDataSource<T : LocalModel>(
+class FileLocalStorage<T : LocalModel>(
     private val activity: AppCompatActivity,
     private val serializer: Serializer<T>
-) : DataSource<T> {
+) : LocalStorage<T> {
 
     private val file = File(activity.filesDir, "aad_ex02.txt")
 
@@ -44,7 +44,7 @@ class FileDataSource<T : LocalModel>(
 /**
  * Clase que me permite guardar y recuperar modelos de datos en memoria.
  */
-class MemDataSource<T : LocalModel> : DataSource<T> {
+class MemLocalStorage<T : LocalModel> : LocalStorage<T> {
 
     private val dataStore = mutableListOf<T>()
 
@@ -59,10 +59,10 @@ class MemDataSource<T : LocalModel> : DataSource<T> {
 /**
  * Clase que me permite guardar y recuperar modelos de datos en shared preferences SIN cifrar.
  */
-class SharPrefDataSource<T : LocalModel>(
+class SharPrefLocalStorage<T : LocalModel>(
     private val activity: AppCompatActivity,
     private val serializer: Serializer<T>
-) : DataSource<T> {
+) : LocalStorage<T> {
 
     private val sharedPref = activity.getSharedPreferences(
         activity.getString(R.string.preference_file_exercise02), Context.MODE_PRIVATE

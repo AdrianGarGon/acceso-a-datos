@@ -1,4 +1,4 @@
-package com.jmperezra.aad_playground.ut02.exercise02
+package com.jmperezra.aad_playground.ut02.ex02
 
 /**
  * Interfaz genérica de modelos de datos.

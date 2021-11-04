@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.jmperezra.aad_playground.R
-import com.jmperezra.aad_playground.ut02.exercise.repository.UserRepository
+import com.jmperezra.aad_playground.ut02.ex01.repository.UserRepository
 
 class SharedPreferencesActivity : AppCompatActivity() {
 

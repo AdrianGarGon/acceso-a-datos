@@ -1,4 +1,4 @@
-package com.jmperezra.aad_playground.ut02.exercise.repository
+package com.jmperezra.aad_playground.ut02.ex01.repository
 
 import com.jmperezra.aad_playground.ut02.MemDataSource
 import com.jmperezra.aad_playground.ut02.SharPrefDataSource
