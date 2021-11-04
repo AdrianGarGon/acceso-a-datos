@@ -1,4 +1,4 @@
-package com.jmperezra.aad_playground.ut02.exercise.repository
+package com.jmperezra.aad_playground.ut02.exercise01.repository
 
 import com.jmperezra.aad_playground.ut02.MemDataSource
 import com.jmperezra.aad_playground.ut02.SharPrefDataSource
@@ -43,7 +43,7 @@ class UserRepository(
     fun fetchAllUsers(): List<UserModel>? {
         //Obtengo de memoria, si hay datos los devuelvo sino, continuo el código.
         var users = memDataSource.fetchAll()
-        if (users == null){
+        if (users == null) {
             //Obtengo de disco, si hay datos, los guardo en memoria y devuelvo los datos, sino, continuo
             users = sharPrefDataSource.fetchAll()
             users?.run {

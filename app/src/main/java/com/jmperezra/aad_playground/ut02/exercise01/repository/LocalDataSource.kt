@@ -1,4 +1,4 @@
-package com.jmperezra.aad_playground.ut02
+package com.jmperezra.aad_playground.ut02.exercise01.repository
 
 import android.annotation.SuppressLint
 import android.content.Context

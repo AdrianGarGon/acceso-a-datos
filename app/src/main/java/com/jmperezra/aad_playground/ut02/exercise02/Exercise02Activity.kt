@@ -13,7 +13,8 @@ import com.jmperezra.aad_playground.commons.GsonSerializer
 class Exercise02Activity : AppCompatActivity() {
 
     private val TAG: String = Exercise02Activity::class.java.simpleName
-    private val factory = LocalStorageFactory<TapaLocalModel>(this, GsonSerializer<TapaLocalModel>())
+    private val factory =
+        LocalStorageFactory<TapaLocalModel>(this, GsonSerializer<TapaLocalModel>())
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
