@@ -2,7 +2,6 @@ package com.jmperezra.aad_playground.commons
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.jmperezra.aad_playground.ut02.exercise02.TapaLocalModel
 import com.jmperezra.aad_playground.ut02.exercise03.data.AppLocalModel
 import java.lang.reflect.Type
 

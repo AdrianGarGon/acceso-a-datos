@@ -8,6 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:padding="16dp"
         tools:context=".ut01.FileActivity">
 
         <!-- UT-01: Ficheros -->
@@ -25,7 +26,7 @@
             android:id="@+id/action_ut01_ex01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/action_text_ut01_ex01" />
+            android:text="@string/action_text_ex01" />
 
         <!-- UT-02: Almacenamiento XML -->
         <TextView
@@ -43,19 +44,37 @@
             android:id="@+id/action_ut02_ex01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/action_text_ut02_ex01" />
+            android:text="@string/action_text_ex01" />
 
         <Button
             android:id="@+id/action_ut02_ex02"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/action_text_ut02_ex02" />
+            android:text="@string/action_text_ex02" />
 
         <Button
             android:id="@+id/action_ut02_ex03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/action_text_ut02_ex03" />
+            android:text="@string/action_text_ex03" />
+
+        <!-- UT03: Bases de datos -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/title_text_ut03" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <Button
+            android:id="@+id/action_ut03_ex01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_text_ex01" />
 
     </LinearLayout>
 

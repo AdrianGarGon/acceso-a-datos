@@ -14,8 +14,8 @@ El ejercicio debe cumplir los siguientes objetivos:
   si es la primera vez que se inicia la actividad o **false** si ya se ha iniciado más de una vez.
 - Para la visualización del true o false se usará un Log.
 - La capa de datos a través de su repositorio debe ser capaz de almacenar el número de estrellas
-  seleccionadas por el usuario para que cuando se reinicie la aplicación y actividad 
-  restaure el valor seleccionado.
+  seleccionadas por el usuario para que cuando se reinicie la aplicación y actividad restaure el
+  valor seleccionado.
 - Si se pulse el botón 'reset' el el valor de las estrellas se pone a 0.
 
 ## Ayuda

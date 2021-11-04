@@ -23,7 +23,7 @@
             android:label="@string/title_text_ut02" />
 
         <activity
-            android:name=".ut02.exercise02.Exercise02Activity"
+            android:name=".ut02.ex02.Exercise02Activity"
             android:exported="true"
             android:label="@string/title_text_ut02" />
 
@@ -31,6 +31,12 @@
             android:name=".ut02.exercise03.Exercise03Activity"
             android:exported="false"
             android:label="@string/title_text_ut02" />
+
+        <!-- UT-03: Bases de datos: Room -->
+        <activity
+            android:name=".ut03.DataBaseActivity"
+            android:exported="false"
+            android:label="@string/title_text_ut03" />
 
         <!-- Main -->
         <activity

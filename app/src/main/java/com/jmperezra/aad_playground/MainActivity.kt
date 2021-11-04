@@ -5,9 +5,10 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.jmperezra.aad_playground.ut01.FileActivity
+import com.jmperezra.aad_playground.ut02.ex02.Exercise02Activity
 import com.jmperezra.aad_playground.ut02.exercise01.Exercise01Activity
-import com.jmperezra.aad_playground.ut02.exercise02.Exercise02Activity
 import com.jmperezra.aad_playground.ut02.exercise03.Exercise03Activity
+import com.jmperezra.aad_playground.ut03.DataBaseActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,6 +30,9 @@ class MainActivity : AppCompatActivity() {
         }
         findViewById<Button>(R.id.action_ut02_ex03).setOnClickListener {
             navigateTo(Exercise03Activity::class.java)
+        }
+        findViewById<Button>(R.id.action_ut03_ex01).setOnClickListener {
+            navigateTo(DataBaseActivity::class.java)
         }
     }
 
