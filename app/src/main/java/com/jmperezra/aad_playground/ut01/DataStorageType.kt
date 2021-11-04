@@ -11,7 +11,7 @@ import java.io.File
  *  4. Bases de datos.
  *
  */
-class DataStorageType (private val activity: Activity) {
+class DataStorageType(private val activity: Activity) {
 
     /**
      * Fichero específico de la app en el directorio de la aplicación.
@@ -19,7 +19,7 @@ class DataStorageType (private val activity: Activity) {
      * No se necesitan permisos especiales.
      * Los ficheros desaparecen si se desinstala la aplicación.
      */
-    fun privateFile(){
+    fun privateFile() {
         val file = File(activity.filesDir, "private.txt")
         file.writeText("Hola!")
     }
@@ -30,7 +30,7 @@ class DataStorageType (private val activity: Activity) {
      * No se necesitan permisos especiales.
      * Los ficheros desaparecen si se desinstala la aplicación.
      */
-    fun privateCacheFile(){
+    fun privateCacheFile() {
         val cacheFile = File(activity.cacheDir, "private_cache.txt")
         cacheFile.writeText("Hola!")
     }
@@ -42,8 +42,9 @@ class DataStorageType (private val activity: Activity) {
      * api 19 (4.4) o posterior.
      * Los ficheros desaparecen si se desinstala la aplicación.
      */
-    fun privateExternalFile(){
-        val externalFile = File(activity.getExternalFilesDir("path_directory"), "external_private_file.txt")
+    fun privateExternalFile() {
+        val externalFile =
+            File(activity.getExternalFilesDir("path_directory"), "external_private_file.txt")
         externalFile.writeText("Hola!")
     }
 
@@ -54,8 +55,9 @@ class DataStorageType (private val activity: Activity) {
      * api 19 (4.4) o posterior.
      * Los ficheros desaparecen si se desinstala la aplicación.
      */
-    fun privateExternalCacheFile(){
-        val externalFile = File(activity.getExternalFilesDir("path_directory"), "external_private_cache.txt")
+    fun privateExternalCacheFile() {
+        val externalFile =
+            File(activity.getExternalFilesDir("path_directory"), "external_private_cache.txt")
         externalFile.writeText("Hola!")
     }
 
@@ -67,7 +69,7 @@ class DataStorageType (private val activity: Activity) {
      * Se necesita el permiso para todos los ficheros si la versión es Api Level 28 o anterior (Android 9)
      * Los ficheros desaparecen si se desinstala la aplicación.
      */
-    fun mediaStore(){
+    fun mediaStore() {
 
     }
 }

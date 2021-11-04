@@ -11,7 +11,7 @@ interface DataSource {
 
 class FileDataSource(private val path: String) : DataSource {
 
-    lateinit var file: File
+    var file: File
 
     init {
         file = createFile()
@@ -49,7 +49,7 @@ class FileDataSource(private val path: String) : DataSource {
     private fun getFile(id: String) = File(file, id)
 }
 
-class MemDataSource() : DataSource {
+class MemDataSource : DataSource {
 
     private val store: MutableMap<String, String> = mutableMapOf()
 

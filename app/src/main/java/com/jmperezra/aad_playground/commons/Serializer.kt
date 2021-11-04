@@ -2,7 +2,8 @@ package com.jmperezra.aad_playground.commons
 
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.jmperezra.aad_playground.ut02.ex02.TapaLocalModel
+import com.jmperezra.aad_playground.ut02.exercise02.TapaLocalModel
+import com.jmperezra.aad_playground.ut02.exercise03.data.AppLocalModel
 import java.lang.reflect.Type
 
 interface Serializer<T> {
@@ -18,7 +19,7 @@ interface Serializer<T> {
 class GsonSerializer<T> : Serializer<T> {
 
     private val gson = Gson()
-    private val types: Type = TypeToken.getParameterized(TapaLocalModel::class.java).type
+    private val types: Type = TypeToken.getParameterized(AppLocalModel::class.java).type
 
     override fun toJson(model: T): String =
         gson.toJson(model, types)

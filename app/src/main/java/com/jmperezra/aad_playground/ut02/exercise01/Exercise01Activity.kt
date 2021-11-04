@@ -1,14 +1,18 @@
-package com.jmperezra.aad_playground.ut02
+package com.jmperezra.aad_playground.ut02.exercise01
 
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.jmperezra.aad_playground.R
-import com.jmperezra.aad_playground.ut02.ex01.repository.UserRepository
+import com.jmperezra.aad_playground.ut02.MemDataSource
+import com.jmperezra.aad_playground.ut02.SharPrefDataSource
+import com.jmperezra.aad_playground.ut02.UserModel
+import com.jmperezra.aad_playground.ut02.exercise01.repository.LocalDataSource
+import com.jmperezra.aad_playground.ut02.exercise01.repository.UserRepository
 
-class SharedPreferencesActivity : AppCompatActivity() {
+class Exercise01Activity : AppCompatActivity() {
 
-    private val TAG = SharedPreferencesActivity::class.java.canonicalName
+    private val TAG = Exercise01Activity::class.java.canonicalName
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
