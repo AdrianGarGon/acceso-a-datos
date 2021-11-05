@@ -1,9 +1,6 @@
-package com.jmperezra.aad_playground.ut03.data
+package com.jmperezra.aad_playground.ut03.ex01.data
 
-import androidx.room.Dao
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.Query
+import androidx.room.*
 
 @Dao
 interface UserDao {
@@ -22,8 +19,8 @@ interface UserDao {
     @Query("SELECT * from user WHERE id = :id")
     fun findById(id: Int): UserEntity?
 
-    @Insert
-    fun insertAll(vararg user: UserEntity)
+    @Insert(onConflict = OnConflictStrategy.ABORT)
+    fun insert(vararg user: UserEntity)
 
     @Delete
     fun delete(user: UserEntity)

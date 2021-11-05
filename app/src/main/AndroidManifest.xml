@@ -14,27 +14,30 @@
         <activity
             android:name=".ut01.FileActivity"
             android:exported="true"
-            android:label="@string/title_text_ut01" />
+            android:label="@string/title_text_ut01" /> <!-- UT-02: Almacenamiento XML -->
 
-        <!-- UT-02: Almacenamiento XML -->
+        <!-- UT-02: XML -->
         <activity
             android:name=".ut02.exercise01.Exercise01Activity"
             android:exported="true"
             android:label="@string/title_text_ut02" />
-
         <activity
             android:name=".ut02.ex02.Exercise02Activity"
             android:exported="true"
             android:label="@string/title_text_ut02" />
-
         <activity
             android:name=".ut02.exercise03.Exercise03Activity"
             android:exported="false"
-            android:label="@string/title_text_ut02" />
+            android:label="@string/title_text_ut02" /> <!-- UT-03: Bases de datos: Room -->
 
-        <!-- UT-03: Bases de datos: Room -->
+        <!-- UT-03: Base de datos -->
         <activity
-            android:name=".ut03.DataBaseActivity"
+            android:name=".ut03.ex01.Example01Activity"
+            android:exported="false"
+            android:label="@string/title_text_ut03" />
+
+        <activity
+            android:name=".ut03.ex02.Example02Activity"
             android:exported="false"
             android:label="@string/title_text_ut03" />
 
@@ -48,7 +51,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

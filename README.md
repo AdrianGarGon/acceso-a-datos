@@ -23,6 +23,8 @@ Repositorio del módulo **Acceso a Datos** del ciclo formativo **Desarrollo de A
 - Carpeta en el proyecto: [ut03](https://github.com/DAM-2021/acceso-a-datos/tree/master/app/src/main/java/com/jmperezra/aad_playground/ut03)
 - En esta unidad se trabaja con bases de datos relacionales y de objetos.
 - En esta unidad se trabaja con un ORM: Room Android.
+- Material complementario:
+  - Librería Room (Android): [aquí](https://developer.android.com/training/data-storage/room)
 
 ## UT-04: Firebase
 - En esta unidad se trabaja con una base de datos documental (NoSQL): Firebase.
@@ -36,3 +38,5 @@ Repositorio del módulo **Acceso a Datos** del ciclo formativo **Desarrollo de A
 - Repaso de conceptos sobre clase, interfaces y clases abstractas.
 - Repaso de conceptos sobre genéricos.
 - Repaso de conceptos sobre abtraer librerías externas al proyecto.
+- Patrón Singleton (Base de datos)
+- 

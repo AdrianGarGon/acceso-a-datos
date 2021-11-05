@@ -1,4 +1,4 @@
-package com.jmperezra.aad_playground.ut03.data
+package com.jmperezra.aad_playground.ut03.ex01.data
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -6,6 +6,7 @@ import androidx.room.PrimaryKey
 
 //@Entity(ignoredColumns = arrayOf("email"))
 //@Entity(indices = arrayOf(Index(value = ["name", "username"])))
+//@Entity(primaryKeys = arrayOf("id", "name"))
 @Entity(tableName = "user")
 data class UserEntity(
     @PrimaryKey val id: Int,
