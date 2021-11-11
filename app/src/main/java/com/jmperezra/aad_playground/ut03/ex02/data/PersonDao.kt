@@ -7,7 +7,7 @@ interface PersonDao {
 
     @Transaction
     @Query("SELECT * FROM person")
-    fun findAll(): List<PersonAndPet>?
+    fun findAll(): List<PersonEntity>?
 
     @Query("SELECT * FROM person WHERE id = :personId")
     fun findById(personId: Int): PersonEntity
@@ -25,6 +25,12 @@ interface PersonDao {
     fun update(vararg personEntity: PersonEntity)
 
     @Transaction
+    @Query("SELECT * from person")
+    fun getPersonAndPets():List<PersonAndPet>?
+
+    @Transaction
     @Query("SELECT * FROM person")
     fun getUsersAndLibraries(): List<PersonAndPet>?
+
+
 }

@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
         }
         findViewById<Button>(R.id.action_ut03_ex02).setOnClickListener {
             navigateTo(Example02Activity::class.java)
+
         }
     }
 

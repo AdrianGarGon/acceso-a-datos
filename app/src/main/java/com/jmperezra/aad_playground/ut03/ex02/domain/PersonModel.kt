@@ -8,4 +8,7 @@ data class PersonModel(
     val petModel: PetModel
 )
 
-data class PetModel(val id: Int, val name: String, val age: Int)
+data class PetModel(
+    val id: Int,
+    val name: String,
+    val age: Int)
