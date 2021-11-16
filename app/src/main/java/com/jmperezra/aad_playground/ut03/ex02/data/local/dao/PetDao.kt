@@ -1,6 +1,7 @@
-package com.jmperezra.aad_playground.ut03.ex02.data
+package com.jmperezra.aad_playground.ut03.ex02.data.local.dao
 
 import androidx.room.*
+import com.jmperezra.aad_playground.ut03.ex02.data.PetEntity
 
 @Dao
 interface PetDao {
