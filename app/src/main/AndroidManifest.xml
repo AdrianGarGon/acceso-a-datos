@@ -37,7 +37,7 @@
             android:label="@string/title_text_ut03" />
 
         <activity
-            android:name=".ut03.ex02.Example02Activity"
+            android:name=".ut03.ex02.presentation.Example02Activity"
             android:exported="false"
             android:label="@string/title_text_ut03" />
 

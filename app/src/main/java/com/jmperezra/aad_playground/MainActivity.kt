@@ -11,7 +11,7 @@ import com.jmperezra.aad_playground.ut02.ex02.Exercise02Activity
 import com.jmperezra.aad_playground.ut02.exercise01.Exercise01Activity
 import com.jmperezra.aad_playground.ut02.exercise03.Exercise03Activity
 import com.jmperezra.aad_playground.ut03.ex01.Example01Activity
-import com.jmperezra.aad_playground.ut03.ex02.Example02Activity
+import com.jmperezra.aad_playground.ut03.ex02.presentation.Example02Activity
 
 class MainActivity : AppCompatActivity() {
 
@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
         }
         findViewById<Button>(R.id.action_ut03_ex02).setOnClickListener {
             navigateTo(Example02Activity::class.java)
+
         }
     }
 
